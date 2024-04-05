@@ -1,0 +1,28 @@
+version: 2
+
+models:
+  - name: customers
+    description: customer order details
+    columns:
+      - name: cust_id
+        description: Unique identifier for the customer
+        tests:
+          - unique
+          - not_null
+      - name: customer_name
+        description: Unique identifier for the customer
+        tests:
+          - unique
+          - not_null
+      - name: cust_region
+        description: Unique identifier for the customer
+        tests:
+          - not_null
+      - name: first_ordered_date
+        description: first order by customer
+      - name: most_recent_date
+        description: last order by customer
+      - name: total_order
+        description: order count of customer
+      - name: total_amount
+        description: purchased value of customer

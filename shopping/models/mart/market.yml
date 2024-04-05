@@ -1,0 +1,47 @@
+version: 2
+# ord_ship_id
+# ship_id
+# prod_id
+# cust_id
+# order_quantity
+# value
+# product_category
+# product_sub_category
+models:
+  - name: market
+    description: market details
+    columns:
+      - name: cust_id
+        description: Unique identifier for the customer
+        tests:
+          - unique
+          - not_null
+      - name: ship_id
+        description: Unique identifier for the shippment
+        tests:
+          - unique
+          - not_null
+      - name: prod_id
+        description: Unique identifier for the product
+        tests:
+          - unique
+          - not_null  
+
+      - name: ord_ship_id
+        description: Unique identifier for the order that goes for the shippment
+        tests:
+          - unique
+          - not_null  
+      - name: order_quantity
+        description: quantity of the orders
+        tests:
+          - not_null
+      - name: value
+        description: purchased value
+        tests:
+          - not_null
+      - name:  product_category
+        description: detail about product category
+
+      - name:  product_sub_category
+        description: detail about product sub category

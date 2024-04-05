@@ -1,0 +1,23 @@
+version: 2
+
+models:
+      - name: cust_region
+        description: Unique identifier for the customer
+        tests:
+          - not_null
+      - name: cust_id
+        description: Unique identifier for the customer
+        tests:
+          - unique
+          - not_null
+      - name: ord_ship_id
+        description: Unique identifier for the product
+        tests:
+          - unique
+          - not_null  
+      - name: delay_date
+        description: how much time it tooks
+
+      - name: order_priority
+        description: priority given by the customers
+       

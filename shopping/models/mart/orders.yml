@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: orders
+    description: orders details
+    columns:
+      - name: order_id
+        description: Unique identifier for the order
+        tests:
+          - unique
+          - not_null
+      - name: order_date
+        description: details about the order date
+        tests:
+          - not_null
+      - name: ord_ship_id
+        description: Unique identifier for the product
+        tests:
+          - unique
+          - not_null  
+
+      - name: order_priority
+        description: priority given by the customers
+       
